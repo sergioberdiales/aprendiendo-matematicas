@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fracciones Equivalentes</title>
+    <title>Fracciones equivalentes | Aprendiendo Matemáticas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,81 +18,108 @@
       <section class="panel learning-path">
         <div class="path-copy">
           <p class="section-label">Ruta</p>
-          <h2>Esta lección forma parte de un recorrido más grande</h2>
+          <h2>La lección forma parte de una secuencia</h2>
           <p>
-            La idea es que la app vaya creciendo por cursos, unidades y temas,
-            para que Elia pueda volver a cada parte cuando la necesite.
+            Esta página está organizada por curso, unidad y tema para que el
+            aprendizaje avance paso a paso y sea fácil volver a cada idea.
           </p>
         </div>
         <div class="path-levels" aria-label="Estructura de contenidos">
           <article class="path-card">
             <span class="path-step">Nivel 1</span>
             <strong>Aprendiendo Matemáticas</strong>
-            <p>La biblioteca general con explicaciones, juegos y retos.</p>
+            <p>Explicaciones, práctica guiada y pequeños retos.</p>
           </article>
           <article class="path-card">
             <span class="path-step">Nivel 2</span>
             <strong>Sexto de Primaria</strong>
-            <p>Contenidos adaptados al curso y al nivel de 11-12 años.</p>
+            <p>Contenidos pensados para primaria alta e inicio de secundaria.</p>
           </article>
           <article class="path-card">
             <span class="path-step">Nivel 3</span>
             <strong>Unidad 5. Fracciones. Operaciones</strong>
-            <p>Bloque dedicado a entender y manejar fracciones con seguridad.</p>
+            <p>Un bloque para entender cómo funcionan las fracciones.</p>
           </article>
           <article class="path-card current">
             <span class="path-step">Nivel 4</span>
             <strong>Fracciones equivalentes</strong>
-            <p>La lección actual: misma cantidad, números distintos.</p>
+            <p>Misma cantidad escrita de formas distintas.</p>
           </article>
         </div>
       </section>
 
       <section class="hero">
-        <p class="eyebrow">Aprendiendo Matemáticas · Sexto de Primaria</p>
+        <p class="eyebrow">Unidad 5 · Sexto de Primaria</p>
         <h1>Fracciones equivalentes</h1>
         <p class="hero-copy">
-          Tema dentro de <strong>Unidad 5. Fracciones. Operaciones</strong>.
-          Aprende a reconocer fracciones que parecen distintas, pero
-          representan la misma cantidad.
+          Una fracción puede escribirse de varias maneras distintas sin cambiar
+          la cantidad que representa.
         </p>
-        <div class="hero-badges" aria-label="Objetivos de aprendizaje">
-          <span>Unidad 5</span>
-          <span>Descubre con pizza</span>
+        <p class="idea-line">
+          <strong>Idea central:</strong> cambiar la forma de dividir no cambia
+          la cantidad si arriba y abajo se ajustan en la misma proporción.
+        </p>
+        <div class="hero-badges" aria-label="Ideas clave">
+          <span>Partes iguales</span>
           <span>Misma cantidad</span>
-          <span>Amplifica y simplifica</span>
-          <span>Juego de práctica</span>
+          <span>Amplificar y simplificar</span>
+          <span>Números en la recta</span>
         </div>
       </section>
 
-      <section class="panel discover-panel">
+      <section class="panel lesson-block discover-panel">
         <div>
-          <p class="section-label">Descubre</p>
-          <h2>La pizza puede cortarse de formas distintas</h2>
+          <p class="section-label">1. Descubre con pizza</p>
+          <h2>Una fracción dice cuántas partes iguales tomas</h2>
           <p>
-            Si te comes media pizza, da igual que la pizza esté dividida en 2,
-            4 u 8 porciones. La parte que comes es la misma.
+            Cuando una pizza se divide en partes iguales, la fracción indica
+            cuántas partes se toman de ese todo. Si tomas una de dos partes
+            iguales, tomas la mitad.
           </p>
-          <p class="discover-equality"><strong>1/2 = 2/4 = 4/8</strong></p>
+          <p>
+            Si ahora cada parte se vuelve a dividir en dos partes iguales,
+            habrá más trozos, pero la cantidad total de pizza no cambia.
+          </p>
+          <div class="equality-row">
+            <span class="fraction fraction--lg" aria-label="un medio">
+              <span class="fraction__top">1</span>
+              <span class="fraction__bottom">2</span>
+            </span>
+            <span class="equals">=</span>
+            <span class="fraction fraction--lg" aria-label="dos cuartos">
+              <span class="fraction__top">2</span>
+              <span class="fraction__bottom">4</span>
+            </span>
+            <span class="equals">=</span>
+            <span class="fraction fraction--lg" aria-label="cuatro octavos">
+              <span class="fraction__top">4</span>
+              <span class="fraction__bottom">8</span>
+            </span>
+          </div>
+          <p class="support-text">
+            Hay más partes y también tomas más partes, pero la porción total
+            sigue siendo la misma.
+          </p>
         </div>
+
         <div class="pizza-board" aria-hidden="true">
-          <div class="pizza-card">
+          <article class="pizza-card">
             <div class="pizza pizza-2">
               <span class="slice active"></span>
               <span class="slice"></span>
             </div>
-            <strong>1/2</strong>
-          </div>
-          <div class="pizza-card">
+            <div class="compact-fraction">1/2</div>
+          </article>
+          <article class="pizza-card">
             <div class="pizza pizza-4">
               <span class="slice active"></span>
               <span class="slice active"></span>
               <span class="slice"></span>
               <span class="slice"></span>
             </div>
-            <strong>2/4</strong>
-          </div>
-          <div class="pizza-card">
+            <div class="compact-fraction">2/4</div>
+          </article>
+          <article class="pizza-card">
             <div class="pizza pizza-8">
               <span class="slice active"></span>
               <span class="slice active"></span>
@@ -103,145 +130,407 @@
               <span class="slice"></span>
               <span class="slice"></span>
             </div>
-            <strong>4/8</strong>
-          </div>
+            <div class="compact-fraction">4/8</div>
+          </article>
         </div>
       </section>
 
-      <section class="panel learn-panel">
-        <div class="learn-copy">
-          <p class="section-label">Aprende</p>
-          <h2>Dos ideas que salen en el libro, explicadas claro</h2>
-          <p>
-            Dos fracciones son equivalentes si representan la misma cantidad.
-            Puedes comprobarlo de dos maneras: viendo si una sale de la otra
-            al multiplicar o dividir arriba y abajo por el mismo número, o
-            comparando los productos en cruz.
-          </p>
-        </div>
-        <div class="cross-check">
-          <p class="mini-label">Comprobación rápida</p>
-          <div class="cross-math">6/8 y 3/4</div>
-          <p>6 × 4 = 24 y 8 × 3 = 24</p>
-          <p class="cross-result">Como dan lo mismo, son equivalentes.</p>
-        </div>
-      </section>
-
-      <section class="concept-grid">
-        <article class="panel concept-card">
-          <p class="section-label">Paso 1</p>
-          <h2>Por amplificación</h2>
-          <p>
-            Multiplica numerador y denominador por el mismo número distinto de
-            cero. La fracción cambia de aspecto, pero no de valor.
-          </p>
-          <div class="math-line">9/15 → 18/30 → 36/60</div>
-        </article>
-
-        <article class="panel concept-card">
-          <p class="section-label">Paso 2</p>
-          <h2>Por simplificación</h2>
-          <p>
-            Divide ambos términos entre el mismo número distinto de cero. Así
-            consigues una fracción equivalente más sencilla.
-          </p>
-          <div class="math-line">9/15 → 3/5</div>
-        </article>
-
-        <article class="panel concept-card">
-          <p class="section-label">Ojo</p>
-          <h2>Los dos a la vez</h2>
-          <p>
-            Nunca cambies solo arriba o solo abajo. Para conservar la misma
-            cantidad, siempre se modifica la fracción por igual.
-          </p>
-          <div class="math-line">2/3 → 4/6 sí · 2/6 no</div>
-        </article>
-      </section>
-
-      <section class="panel worked-example">
-        <div class="worked-copy">
-          <p class="section-label">Ejemplo guiado</p>
-          <h2>¿Son equivalentes 6/8 y 3/4?</h2>
-          <ol>
-            <li>Miro los productos en cruz: 6 × 4 y 8 × 3.</li>
-            <li>Los dos productos valen 24.</li>
-            <li>Como coinciden, las dos fracciones representan la misma cantidad.</li>
-          </ol>
-        </div>
-        <div class="worked-check">
-          <p class="check-title">Resultado</p>
-          <p class="check-answer">6/8 = 3/4</p>
-          <p class="check-note">Puedes pasar de 6/8 a 3/4 dividiendo entre 2.</p>
-        </div>
-      </section>
-
-      <section class="panel lab">
-        <div class="lab-copy">
-          <p class="section-label">Practica</p>
-          <h2>Laboratorio de amplificación</h2>
-          <p>
-            Usa el ejemplo del tema y comprueba cómo una fracción puede crecer
-            sin dejar de ser la misma cantidad.
-          </p>
-        </div>
-
-        <div class="lab-controls">
-          <label for="multiplier">Multiplicador: <span id="multiplier-value">2</span></label>
-          <input id="multiplier" type="range" min="2" max="6" value="2" />
-        </div>
-
-        <div class="lab-output">
-          <div class="fraction-pair">
-            <div>
-              <p class="mini-label">Fracción base</p>
-              <div class="big-fraction" id="base-fraction">9/15</div>
-            </div>
-            <div class="pair-arrow">→</div>
-            <div>
-              <p class="mini-label">Fracción equivalente</p>
-              <div class="big-fraction" id="equivalent-fraction">18/30</div>
-            </div>
-          </div>
-          <p id="lab-explanation" class="lab-explanation">
-            Hemos multiplicado numerador y denominador por 2.
-          </p>
-        </div>
-      </section>
-
-      <section class="panel mini-practice">
+      <section class="panel lesson-block rectangle-panel">
         <div>
-          <p class="section-label">Mini reto</p>
-          <h2>¿Qué fracción es irreducible?</h2>
+          <p class="section-label">2. Misma idea con barra o rectángulo</p>
+          <h2>También funciona si lo miras como una banda</h2>
           <p>
-            Una fracción irreducible ya no se puede simplificar más porque no
-            hay un número mayor que 1 que divida a los dos términos.
+            Las fracciones no solo sirven para pizzas. En cualquier rectángulo,
+            si la parte coloreada ocupa la misma longitud, la cantidad es la
+            misma aunque lo hayas dividido de otra manera.
+          </p>
+          <p>
+            Si el todo se divide en más partes, el número de partes coloreadas
+            también debe crecer en la misma proporción.
           </p>
         </div>
-        <div class="irreducible-cards">
-          <article>
-            <strong>12/20</strong>
-            <span>Se puede simplificar entre 4.</span>
+
+        <div class="bar-stack" aria-hidden="true">
+          <article class="bar-card">
+            <div class="bar bar-2">
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece"></span>
+            </div>
+            <span class="fraction" aria-label="un medio">
+              <span class="fraction__top">1</span>
+              <span class="fraction__bottom">2</span>
+            </span>
           </article>
-          <article class="highlight">
-            <strong>3/5</strong>
-            <span>Ya está en su forma más simple.</span>
+          <article class="bar-card">
+            <div class="bar bar-4">
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece"></span>
+              <span class="bar-piece"></span>
+            </div>
+            <span class="fraction" aria-label="dos cuartos">
+              <span class="fraction__top">2</span>
+              <span class="fraction__bottom">4</span>
+            </span>
           </article>
-          <article>
-            <strong>18/24</strong>
-            <span>Se puede simplificar entre 6.</span>
+          <article class="bar-card">
+            <div class="bar bar-8">
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece"></span>
+              <span class="bar-piece"></span>
+              <span class="bar-piece"></span>
+              <span class="bar-piece"></span>
+            </div>
+            <span class="fraction" aria-label="cuatro octavos">
+              <span class="fraction__top">4</span>
+              <span class="fraction__bottom">8</span>
+            </span>
           </article>
         </div>
       </section>
 
-      <section class="panel game">
+      <section class="panel lesson-block number-panel">
+        <div>
+          <p class="section-label">3. Misma idea en recta numérica</p>
+          <h2>Las fracciones también son números</h2>
+          <p>
+            La recta numérica ayuda a ver que
+            <span class="fraction-inline">
+              <span class="fraction" aria-label="un medio">
+                <span class="fraction__top">1</span>
+                <span class="fraction__bottom">2</span>
+              </span>
+            </span>,
+            <span class="fraction-inline">
+              <span class="fraction" aria-label="dos cuartos">
+                <span class="fraction__top">2</span>
+                <span class="fraction__bottom">4</span>
+              </span>
+            </span>
+            y
+            <span class="fraction-inline">
+              <span class="fraction" aria-label="cuatro octavos">
+                <span class="fraction__top">4</span>
+                <span class="fraction__bottom">8</span>
+              </span>
+            </span>
+            están en el mismo punto.
+          </p>
+          <p>
+            No son solo “trozos”: representan el mismo número entre 0 y 1.
+          </p>
+        </div>
+
+        <div class="number-line-card" aria-hidden="true">
+          <div class="number-line">
+            <span class="tick tick-start"></span>
+            <span class="tick tick-quarter"></span>
+            <span class="tick tick-half"></span>
+            <span class="tick tick-threequarters"></span>
+            <span class="tick tick-end"></span>
+            <span class="point point-half"></span>
+          </div>
+          <div class="number-labels">
+            <span>0</span>
+            <span class="number-family">
+              <span class="fraction fraction--sm">
+                <span class="fraction__top">1</span>
+                <span class="fraction__bottom">2</span>
+              </span>
+              <span class="fraction fraction--sm">
+                <span class="fraction__top">2</span>
+                <span class="fraction__bottom">4</span>
+              </span>
+              <span class="fraction fraction--sm">
+                <span class="fraction__top">4</span>
+                <span class="fraction__bottom">8</span>
+              </span>
+            </span>
+            <span>1</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel lesson-block meaning-panel">
+        <div>
+          <p class="section-label">4. Qué significa “equivalente”</p>
+          <h2>Distinta escritura, misma cantidad</h2>
+        </div>
+        <div class="meaning-grid">
+          <article class="meaning-card">
+            <strong>Mismo valor</strong>
+            <p>
+              Las fracciones equivalentes representan exactamente la misma
+              cantidad.
+            </p>
+          </article>
+          <article class="meaning-card">
+            <strong>Misma proporción</strong>
+            <p>
+              Si el todo se divide en más partes, también aumentan en la misma
+              proporción las partes que se toman.
+            </p>
+          </article>
+          <article class="meaning-card note-card">
+            <strong>Comprobación rápida</strong>
+            <p>
+              Los productos en cruz pueden servir para verificar, pero no son
+              la idea principal. Primero hay que entender por qué la cantidad
+              no cambia.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel lesson-block methods-panel">
+        <div>
+          <p class="section-label">5. Cómo obtener fracciones equivalentes</p>
+          <h2>Amplificar y simplificar son dos caminos de la misma idea</h2>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card">
+            <p class="section-label">Amplificación</p>
+            <h3>Haces más partes, sin cambiar la cantidad</h3>
+            <p>
+              Multiplicar numerador y denominador por el mismo número divide el
+              todo en más partes y aumenta en la misma proporción las partes
+              tomadas.
+            </p>
+            <div class="fraction-story">
+              <span class="fraction">
+                <span class="fraction__top">3</span>
+                <span class="fraction__bottom">5</span>
+              </span>
+              <span class="story-arrow">→</span>
+              <span class="fraction">
+                <span class="fraction__top">6</span>
+                <span class="fraction__bottom">10</span>
+              </span>
+              <span class="story-note">arriba y abajo por 2</span>
+            </div>
+          </article>
+          <article class="concept-card">
+            <p class="section-label">Simplificación</p>
+            <h3>Reagrupas partes para verlo más claro</h3>
+            <p>
+              Dividir numerador y denominador por el mismo número no cambia el
+              valor. Solo escribe la misma cantidad de una forma más simple.
+            </p>
+            <div class="fraction-story">
+              <span class="fraction">
+                <span class="fraction__top">12</span>
+                <span class="fraction__bottom">20</span>
+              </span>
+              <span class="story-arrow">→</span>
+              <span class="fraction">
+                <span class="fraction__top">3</span>
+                <span class="fraction__bottom">5</span>
+              </span>
+              <span class="story-note">arriba y abajo entre 4</span>
+            </div>
+          </article>
+        </div>
+        <p class="relationship-note">
+          Amplificar y simplificar son operaciones inversas: una crea una
+          escritura más detallada y la otra vuelve a una escritura más simple
+          de la misma cantidad.
+        </p>
+      </section>
+
+      <section class="panel lesson-block example-panel">
+        <div class="example-copy">
+          <p class="section-label">6. Ejemplo guiado razonado</p>
+          <h2>
+            ¿Por qué
+            <span class="fraction-inline">
+              <span class="fraction">
+                <span class="fraction__top">6</span>
+                <span class="fraction__bottom">8</span>
+              </span>
+            </span>
+            y
+            <span class="fraction-inline">
+              <span class="fraction">
+                <span class="fraction__top">3</span>
+                <span class="fraction__bottom">4</span>
+              </span>
+            </span>
+            representan la misma cantidad?
+          </h2>
+          <ol>
+            <li>
+              Se puede pasar de
+              <span class="fraction-inline">
+                <span class="fraction">
+                  <span class="fraction__top">6</span>
+                  <span class="fraction__bottom">8</span>
+                </span>
+              </span>
+              a
+              <span class="fraction-inline">
+                <span class="fraction">
+                  <span class="fraction__top">3</span>
+                  <span class="fraction__bottom">4</span>
+                </span>
+              </span>
+              dividiendo numerador y denominador entre 2.
+            </li>
+            <li>
+              Eso significa que 8 partes pequeñas pueden reagruparse en 4
+              partes más grandes, y las 6 partes tomadas pasan a ser 3 grupos.
+            </li>
+            <li>
+              La cantidad no cambia: solo cambia la manera de contar las
+              partes.
+            </li>
+          </ol>
+          <p class="support-text">
+            Verificación rápida: 6 × 4 = 24 y 8 × 3 = 24. Sirve para comprobar,
+            no para sustituir la idea.
+          </p>
+        </div>
+        <div class="example-visual">
+          <div class="bar-compare" aria-hidden="true">
+            <div class="bar bar-8 soft">
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece"></span>
+              <span class="bar-piece"></span>
+            </div>
+            <div class="bar bar-4 soft">
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece filled"></span>
+              <span class="bar-piece"></span>
+            </div>
+          </div>
+          <div class="equality-row">
+            <span class="fraction fraction--lg">
+              <span class="fraction__top">6</span>
+              <span class="fraction__bottom">8</span>
+            </span>
+            <span class="equals">=</span>
+            <span class="fraction fraction--lg">
+              <span class="fraction__top">3</span>
+              <span class="fraction__bottom">4</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel lesson-block confusion-panel">
+        <div>
+          <p class="section-label">7. Lo que suele confundir</p>
+          <h2>Errores típicos que conviene detectar pronto</h2>
+        </div>
+        <div class="confusion-grid">
+          <article class="mistake-card">
+            <strong>No se cambia solo uno</strong>
+            <p class="bad-example">2/3 → 2/6 ✗</p>
+            <p class="good-example">2/3 → 4/6 ✓</p>
+            <p>Si cambias solo abajo o solo arriba, la cantidad ya no es la misma.</p>
+          </article>
+          <article class="mistake-card">
+            <strong>Números más grandes no significan más valor</strong>
+            <p class="bad-example">4/8 y 1/2 valen lo mismo</p>
+            <p>Los números crecen, pero el punto en la recta numérica no cambia.</p>
+          </article>
+          <article class="mistake-card">
+            <strong>Simplificar no es restar</strong>
+            <p class="bad-example">6/8 → 5/7 ✗</p>
+            <p class="good-example">6/8 → 3/4 ✓</p>
+            <p>Para simplificar se divide entre el mismo número, no se resta.</p>
+          </article>
+          <article class="mistake-card">
+            <strong>Multiplicar cambia la forma, no el valor</strong>
+            <p class="good-example">1/2 → 2/4 → 4/8 ✓</p>
+            <p>Es la misma cantidad contada con particiones más pequeñas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel lesson-block irreducible-panel">
+        <div>
+          <p class="section-label">8. Fracción irreducible</p>
+          <h2>La forma más simple de una familia equivalente</h2>
+          <p>
+            Varias fracciones equivalentes forman una misma familia porque
+            representan la misma cantidad. La fracción irreducible es la forma
+            más simple de escribir esa cantidad.
+          </p>
+        </div>
+        <div class="family-card">
+          <div class="family-row">
+            <span class="fraction">
+              <span class="fraction__top">12</span>
+              <span class="fraction__bottom">20</span>
+            </span>
+            <span class="story-arrow">→</span>
+            <span class="fraction">
+              <span class="fraction__top">6</span>
+              <span class="fraction__bottom">10</span>
+            </span>
+            <span class="story-arrow">→</span>
+            <span class="fraction family-final">
+              <span class="fraction__top">3</span>
+              <span class="fraction__bottom">5</span>
+            </span>
+          </div>
+          <p>
+            <span class="compact-fraction">12/20</span> y
+            <span class="compact-fraction">3/5</span> representan lo mismo, pero
+            <span class="compact-fraction">3/5</span> es la forma irreducible:
+            ya no se puede simplificar más.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel lesson-block practice-panel">
+        <div class="practice-head">
+          <div>
+            <p class="section-label">9. Práctica interactiva</p>
+            <h2>Corta, pero pensada para entender</h2>
+            <p>
+              Vas a encontrar una amplificación, una simplificación, un error
+              típico, una equivalencia visual y una pequeña justificación.
+            </p>
+          </div>
+          <div id="practice-tracker" class="practice-tracker" aria-label="Progreso de práctica"></div>
+        </div>
+
+        <div class="practice-card">
+          <p id="practice-type" class="practice-type">Amplificación con sentido</p>
+          <h3 id="practice-question" class="practice-question"></h3>
+          <div id="practice-visual" class="practice-visual"></div>
+          <div id="practice-options" class="practice-options" role="list"></div>
+          <p id="practice-feedback" class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="practice-actions">
+          <button id="practice-next" class="primary-button" type="button" disabled>
+            Siguiente bloque
+          </button>
+          <button id="practice-restart" class="ghost-button" type="button">
+            Reiniciar práctica
+          </button>
+        </div>
+      </section>
+
+      <section class="panel lesson-block game">
         <div class="game-head">
           <div>
-            <p class="section-label">Juego</p>
-            <h2>Misión pizza: sirve la porción correcta</h2>
+            <p class="section-label">10. Juego o mini reto</p>
+            <h2>Misión equivalencia</h2>
             <p>
-              En cada ronda te piden una fracción. Toca la opción equivalente
-              para servir exactamente la misma cantidad.
+              Encuentra la opción que conserva la misma cantidad. El objetivo no
+              es correr, sino detectar por qué una respuesta sí o no funciona.
             </p>
           </div>
           <div class="scoreboard" aria-label="Marcador">
@@ -252,9 +541,11 @@
         </div>
 
         <div class="challenge-card">
-          <p class="challenge-label">Sirve una porción equivalente a</p>
-          <div id="question" class="challenge-fraction">2/5</div>
-          <p id="game-hint" class="game-hint">Pista: piensa si arriba y abajo cambian por el mismo número.</p>
+          <p class="challenge-label">Elige una fracción equivalente a</p>
+          <div id="question" class="challenge-fraction"></div>
+          <p id="game-hint" class="game-hint">
+            Pista: piensa si el todo se ha dividido de otra forma sin cambiar la cantidad.
+          </p>
           <div id="options" class="options" role="list"></div>
           <p id="feedback" class="feedback" aria-live="polite"></p>
         </div>
@@ -263,8 +554,8 @@
           <button id="next-button" class="primary-button" type="button" disabled>
             Siguiente reto
           </button>
-          <button id="restart-button" class="ghost-button" type="button">
-            Empezar de nuevo
+          <button id="restart-button" class="secondary-button" type="button">
+            Nueva misión
           </button>
         </div>
       </section>
