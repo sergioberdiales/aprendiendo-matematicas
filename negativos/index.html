@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Al otro lado del cero · Elia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="questions.js"></script><script defer src="numberLine.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a href="../index.html">↗ Aprendiendo matemáticas</a><span>ELIA / LAB DE IDEAS</span></header>
+<main>
+  <section class="intro"><p class="eyebrow">UN PASO CAMBIA LA PERSPECTIVA</p><h1>Al otro lado<br>del <em>cero.</em></h1><p>La recta no se acaba en el 0.<br>Descubre dónde terminas cuando sigues hacia la izquierda.</p><div class="intro-art" aria-hidden="true"><span>−3</span><i>←</i><span>0</span><i>←</i><span>5</span></div></section>
+  <section id="welcome" class="card welcome"><div><p class="eyebrow">A TU RITMO</p><h2>Hola, Elia. Vamos paso a paso.</h2><p>Primero lo ves, después lo imaginas. Puedes cambiar de nivel cuando quieras, sin prisas ni vidas que perder.</p></div><button id="start" class="primary">Empezar a explorar <span>↗</span></button></section>
+  <section id="game" hidden aria-label="Juego de restas">
+    <div class="toolbar"><div class="mode-switch" role="group" aria-label="Modo de juego"><button id="practice-mode" aria-pressed="true">Explorar restas</button><button id="contrast-mode" aria-pressed="false">¿Distancia o resultado?</button></div><label class="level-label">Nivel <select id="level"><option value="1">1 · Sin negativos</option><option value="2">2 · Cruzando el cero</option><option value="3">3 · Menos ayuda</option><option value="4">4 · Pensamiento mental</option></select></label></div>
+    <div class="stats" aria-label="Progreso de sesión"><span><strong id="done">0</strong> realizados</span><span><strong id="correct">0</strong> aciertos al primer intento</span><span><strong id="streak">0</strong> racha actual</span><span id="level-status">Nivel 1</span></div>
+    <section class="card exercise"><div class="exercise-heading"><span id="theme" class="tag"></span><span id="question-count" class="small"></span></div><p id="instruction" class="small"></p><h2 id="story"></h2><div id="operation" class="operation"></div>
+      <form id="answer-form" novalidate><label for="answer" id="answer-label">¿Dónde terminas?</label><div class="answer-row"><input id="answer" type="text" inputmode="numeric" autocomplete="off" placeholder="Tu respuesta" aria-describedby="validation" maxlength="8"><button type="button" id="minus" aria-label="Cambiar el signo de la respuesta">+/−</button><button type="submit" id="check" class="primary">Comprobar <span>↗</span></button></div><p id="validation" role="status"></p></form>
+      <div id="feedback" class="feedback" hidden role="status"></div>
+      <section id="distance-panel" hidden class="distance-panel" aria-label="Representación de distancia"><p id="distance-copy"></p><div id="distance-visual"></div></section>
+      <button id="reveal" class="secondary" hidden>Ver la representación</button>
+      <section id="line-panel" class="line-panel" aria-label="Recta numérica interactiva"><div class="line-title"><h3 id="line-heading">Tu recorrido</h3><span class="small">← Restar es ir hacia la izquierda</span></div><p id="step-status" role="status" aria-live="polite"></p><div id="line-scroll" class="line-scroll" tabindex="0" aria-label="Recta numérica; desplázate horizontalmente para explorarla"><div id="number-line"></div></div><div class="legend"><span>● Por debajo de cero</span><span>● Por encima de cero</span></div><div class="line-controls"><button id="step" class="secondary">← Un paso</button><button id="play" class="secondary">Ver todos los pasos</button><button id="reset-line" class="text-button">Volver al inicio</button><span id="remaining" class="small"></span></div><p id="meaning" class="meaning"></p></section>
+      <div class="exercise-footer"><p id="footer-hint" class="small">Puedes probar, observar y volver a intentarlo.</p><button id="next" class="primary" hidden>Siguiente reto →</button></div>
+    </section><div class="session-footer"><p>Equivocarse también es una forma de explorar.</p><button id="restart" class="text-button">Empezar otra partida ↻</button></div>
+  </section>
+  <footer>UNA IDEA PARA LLEVARTE <span>La distancia dice cuánto separa. La resta dice dónde terminas.</span></footer>
+</main>
+</body></html>
