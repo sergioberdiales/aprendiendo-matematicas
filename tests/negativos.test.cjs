@@ -50,11 +50,11 @@ test('Contrast pairs keep operands and ask for positive distance',()=>{
   assert.match(s.$('story').textContent,/distancia hay entre 5 y 8/);s.submit(-3);assert.match(s.$('feedback').textContent,/distancia es positiva/);s.submit(3);assert.match(s.$('feedback').textContent,/Exacto/);
   assert.equal(s.$('done').textContent,2);
 });
-test('Levels gate help, invalid input leaves progress untouched, restart resets',()=>{
-  const s=setup();s.$('level').value='3';s.$('level').onchange();assert.equal(s.$('step').disabled,true);
+test('Steps are available at every level, correct answers animate, invalid input and restart work',()=>{
+  const s=setup();s.$('level').value='3';s.$('level').onchange();assert.equal(s.$('step').disabled,false);
   s.submit('');assert.equal(s.$('done').textContent,0);s.submit('3.2');assert.equal(s.$('done').textContent,0);
   s.submit(-3);assert.equal(s.$('step').disabled,false);
-  s.$('level').value='4';s.$('level').onchange();assert.equal(s.$('line-panel').hidden,true);s.submit(-3);assert.equal(s.$('reveal').hidden,false);s.$('reveal').onclick();assert.equal(s.$('line-panel').hidden,false);
+  s.$('level').value='4';s.$('level').onchange();assert.equal(s.$('line-panel').hidden,false);assert.equal(s.$('play').disabled,false);s.submit(-3);assert.equal(s.$('line-panel').hidden,false);assert.equal(s.timers.size,1);s.tick();assert.match(s.$('step-status').textContent,/Paso 1 de 8/);
   s.$('restart').onclick();assert.equal(s.$('done').textContent,0);assert.equal(s.$('welcome').hidden,false);
 });
 test('Generator respects bounds and excludes recent duplicates across 4,000 exercises',()=>{

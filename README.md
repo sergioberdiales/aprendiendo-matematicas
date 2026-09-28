@@ -8,7 +8,7 @@ Abre `index.html` en tu navegador para acceder a la lección de fracciones y al 
 
 El juego incluye cuatro niveles, seis contextos, recta numérica con pasos y pausa, feedback sobre la confusión entre distancia y resultado, y el modo «¿Distancia o resultado?» con preguntas emparejadas. En móvil puedes recorrer la recta horizontalmente y usar el botón **+/−** para introducir negativos.
 
-Los aciertos y la racha cuentan el primer intento de cada ejercicio; se permite corregir la respuesta sin duplicar el progreso. El progreso dura la sesión y se reinicia con «Empezar otra partida» o al recargar. El nivel se cambia libremente.
+Los aciertos y la racha cuentan el primer intento de cada ejercicio; se permite corregir la respuesta sin duplicar el progreso. El progreso dura la sesión y se reinicia con «Empezar otra partida» o al recargar. El nivel se cambia libremente. La recta y los controles aparecen desde el inicio en todas las restas, antes de la respuesta. Al acertar también se reproduce el recorrido automáticamente; se puede pausar. Los niveles 3 y 4 invitan a predecir o calcular mentalmente, sin bloquear la ayuda visual.
 
 ## Dónde modificar el juego
 
